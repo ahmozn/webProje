@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iletisim</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <script>
+        function validateemail()  
+    {  
+    var x=document.form1.email.value;  
+    var atposition=x.indexOf("@");  
+    var dotposition=x.lastIndexOf(".");  
+    if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+      alert("Lütfen geçerli bir email adresi giriniz." );  
+      return false;  
+      }  
+    } 
+    </script>   
+
+<div class="container">
+    <div class="navbar">
+
+        <div class="logo">
+            <a href="index.html">aasdasd</a>
+        </div>
+        <ul>
+            <li><a href="index.html">ANASAYFA</a></li>
+            <li><a href="hakkinda.html">Hakkında</a></li>
+            <li><a href="ozgecmis.html">Özgeçmiş</a></li>
+            <li><a href="sehrim.html">Şehrim</a></li>
+            <li><a href="mirasimiz.html">Mirasımız</a></li>
+            <li><a href="ilgialanlarim.html">İlgi Alanlarım</a></li>
+            <li><a href="iletisim.html" class="activepage">İletişim</a></li>
+        </ul>
+    </div>
+    <div class="sikayet">
+        <h3>Şikayet veya Öneriler için bize ulaşın</h3><br><br>
+    </div>
+    <form name="form1" action="iletisim.php" method="post" class="form" onsubmit="return validateemail();">
+        <h4>Ad :</h4>
+        <input type="text" name="ad" required autofocus><br><br>
+        <h4>Soyad :</h4>
+        <input type="text"name="soyad" required><br><br>
+        <h4>Cinsiyet :</h4>
+        <input type="radio" name="cinsiyet" value="Erkek" required>Erkek<br>
+        <input type="radio" name="cinsiyet" value="Kadın" required>Kadın<br><br>
+
+        <h4>E-mail :</h4>
+        <input type="text" name="email" required><br>
+       
+        <h4>Okuduğunuz Bölüm :</h4>
+        <select name="bolumler" id="bolumler">
+            <option value="null">---------</option>
+            <option value="YazilimMuhendisligi">Yazılım Mühendisliği</option>
+            <option value="MakineMuhendisligi">Makine Mühendisliği</option>
+            <option value="BilgisayarMuhendisligi">Bilgisayar Mühendisliği</option>
+        </select><br><br>
+        
+        <h4>Adres :</h4>
+        <textarea name="textarea" id="" cols="38" rows="10" placeholder="Buraya yazınız..."></textarea><br>
+        
+        <label>
+            <input type="checkbox" name="onay" required>
+            Bilgilerimin doğruluğunu onaylıyorum.<br>
+        </label>
+        <input type="reset"value="TEMİZLE">
+        <input type="submit" value="GÖNDER">
+    </form>
+
+
+</div>
+
+
+
+
+
+<div class="footerContainer">
+    <footer class="footer">
+      <p class="yapimci">&copy; 2022, AOO </p>
+      <ul class="footerLinkler">
+            <li><a href="index.html">ANASAYFA</a></li>
+            <li><a href="hakkinda.html">Hakkında</a></li>
+            <li><a href="ozgecmis.html">Özgeçmiş</a></li>
+            <li><a href="sehrim.html">Şehrim</a></li>
+            <li><a href="mirasimiz.html">Mirasımız</a></li>
+            <li><a href="ilgialanlarim.html">İlgi Alanlarım</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+      </ul>
+    </footer>
+</div>
+
+
+
+
+</body>
+</html>
