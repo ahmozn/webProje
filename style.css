@@ -4,7 +4,7 @@
 }
 
 .container{
-    background:rgb(204, 191, 191);
+    background:none;
     height:100vh;
     background-size: 100% 100%;
 }
@@ -12,7 +12,7 @@
 .container .navbar{
     width: 100%;
     height: 80px;
-    background: rgb(132,41,124)
+    background: green
 }
 
 .navbar .logo a{
@@ -30,7 +30,7 @@
 .navbar ul{
     float:right;
     margin-right: 20px;
-    color: azure;
+    
 }
 
 .navbar ul li{
@@ -41,7 +41,7 @@
 }
 
 .navbar ul li a{
-    color:white;
+    color:black;
     text-decoration: none;
     font-size: 20px;
     padding: 6px 13px;
@@ -57,57 +57,10 @@
     border-radius: 2px;
 }
 
-.container .center{
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    font-family: sans-serif;
-    user-select: none;
-}
-
-.center h1{
-    color:black;
-    font-size: 70px;
-    font-weight: bold;
-    width: 500px;
-    text-align: left;
-}
-
-.center h2{
-    color:white;
-    font-size: 50px;
-    font-weight: bold;
-    width: 300px;
-    margin-top: 10px;
-    text-align: left;
-}
-
-.center .buttons{
-    margin:35px 280px;
-}
-
-.buttons button{
-    height:50px;
-    width: 150px;
-    font-size: 15px;
-    color:blue;
-    background: rgb(123, 11, 45);
-    border:solid 1px red;
-    cursor:pointer;
-    outline:none;
-    border-radius: 25px;
-    transition:1s ;
-}
-
-.buttons button:hover{
-    background:#fff;
-}
-
-.footer{
+.footerContainer{
     display: inline-block;
     background-color: rgb(27, 26, 26);
-    height: 45px;
+    height: 8%;
     width: 100%;
 }
 
@@ -116,24 +69,21 @@
     margin-top: 5px;
 }
 
-.footerLinkler{
-    display: inline-block;
-    height: 10px;
+.footcol{
+    float: left;
+    margin-top: 2px;
+    margin-left: 4%;
+    width: 10%;
 }
 
-.footerLinkler li{
-    display: inline-block;
-    text-decoration: none;
-}
-
-.footerLinkler li a{
+.footerContainer a{
     text-decoration: none;
     background:none;
     border-top: solid white 1px;
     color:white;
     font-size: 15px;
-    margin-left: 170px;
-    padding: 5px 5px;
+    margin-left: 20%;
+    padding: 0px 5px;
 }
 
 .personalInfo{
@@ -166,8 +116,9 @@
 /* slider container */
 .slideshow-container {
   max-width: 1000px;
+  margin-top: 2%;
+  margin-left: 12%;
   position: relative;
-  margin: auto;
 }
 
 .slideshow-container img{
@@ -179,7 +130,7 @@
 
 /* yazi */
 .text {
-  color: #f2f2f2;
+  color: black;
   font-size: 17px;
   padding: 8px 12px;
   position: absolute;
@@ -188,19 +139,6 @@
   text-align: center;
 }
 
-/* sayi belirteci */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-
-.active, .dot:hover {
-  background-color: #717171;
-}
 
 /* gecis animasyonu */
 .fade {
@@ -218,8 +156,16 @@
     border: 2px solid black;
     border-radius: 10px;
     margin-top: 5px;
-    margin-left: 5px;
+    margin-left: 100px;
     max-height: 450px;
+}
+
+#zilkale{
+    margin-top: 2%;
+}
+
+#cayBardagi{
+    margin-top: 2%;
 }
 
 .bardak{
@@ -244,20 +190,23 @@
     font-size: 21px;
     max-width: 600px;
 }
-
-#cayBardagiBaslik{
-    margin-left: 44%;
+.mirascol{
+    float: left;
+    margin-top: 20px;
+    width: 35%;
+    margin-left: 200px;
 }
 
-#cayBardagi{
-    float: right;
-    margin-right: 16%;
+
+.mirascol h4{
+    float: left;
+
 }
 
 .col {
     float: left;
     margin-top: 20px;
-    width: 20%;
+    width: 17%;
 }
   
   /* Clear floats after the columns */
@@ -268,6 +217,7 @@
 }
 
 .col h4{
+    text-decoration:underline;
     font-size: 22px;
     max-width: 600px;
 }
@@ -286,4 +236,315 @@
 .col ul li{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 19px;
+}
+
+.about{
+    background: none;
+}
+
+.bilgi h2{
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    font-size: 25px;
+    margin-left: 20%;
+    margin-top: 50px;
+}
+
+.bilgi img{
+    float:left;
+    margin-left: 70px;
+    border:2px solid black;
+}
+
+.bilgi p{
+    margin-left: 20%;
+    max-width: 340px;
+    font-size: 18px;
+}
+
+.col1{
+    width: 1%;
+    float: left;
+    margin-left: 8%;
+    margin-top: 2%;
+}
+
+.bilgi{
+    background-color:green;
+}
+
+.form{
+    margin-left: 40%;
+    margin-top: 5px;
+}
+
+.form h4{
+    font-size: 20px;
+}
+
+.form input[type=text]{
+    width: 30%;
+  padding: 5px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+.form input[type=email]{
+    width: 30%;
+  padding: 5px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+.form input[type=password]{
+    width: 30%;
+  padding: 5px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+.form input[type=radio]{
+    width: 2%;
+    padding: 5px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+.form select{
+    width: 30%;
+    padding: 5px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+.form option{
+    font-size: 18px;
+}
+.form input[type=reset]{
+    width: 10%;
+    padding: 5px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+.form input[type=submit]{
+    width: 10%;
+    padding: 5px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.form textarea{
+    padding: 5px 20px;
+}
+
+.form .onay{
+    font-size: 10px;
+}
+
+.sikayet h3{
+    margin-top: 5px;
+    margin-left: 40%;
+}
+
+.loginform{
+    margin-left: 40%;
+    margin-top: 5px;
+}
+
+.loginform input[type="text"]{
+    width: 260px;
+  padding: 5px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+
+}
+.loginform input[type="password"]{
+    width: 260px;
+  padding: 5px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+
+}
+
+.loginform input[type=reset]{
+    width: 10%;
+    padding: 5px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+.loginform input[type=submit]{
+    width: 10%;
+    padding: 5px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.logcol{
+    float: left;
+    margin-top: 20px;
+    width: 28%;
+}
+
+
+
+@media screen and (max-width:768px){
+.container{
+    width: 100%;
+}
+
+/*navbar*/ 
+   
+
+    .navbar ul{
+        width: 100%;
+    }
+    
+    .navbar ul li{
+        max-height: fit-content;
+        background: none;
+        size: 20px;
+    }
+    .navbar ul li a{
+        font-size: 12px;
+        margin-left: 2px;
+        
+    }
+/*footer*/
+    .footerContainer{
+        width: 100%;
+    }
+
+    .footcol{
+        width: 100%;
+        max-width: 23px;
+        font-size: 25px;
+        margin-left: 80px;
+    }
+
+    /*login*/
+
+    .logcol{
+        width: 50%;
+    }
+    .loginform{
+        margin-left: 12%;
+        width: 80%;
+     }
+     .loginform h4{
+         width:100%;
+         font-size: 15px;
+     }
+     .loginform input[type=text]{
+         width: 99%;
+       padding: 5px 10px;
+       margin: 2px 0;
+       box-sizing: border-box;
+     }
+     .loginform input[type="password"]{
+        width: 49%;
+        padding: 5px 10px;
+        margin: 2px 0;
+        box-sizing: border-box;
+     }
+     .loginform input[type="submit"]{
+         width: 100px;
+     }
+ 
+     .loginform input[type="reset"]{
+         width: 100px;
+     }
+
+    /*iletisim*/
+    .form{
+       margin: auto;
+       margin-left:10px ;
+       width: 96%;
+    }
+    .form h4{
+        width:100%;
+        font-size: 15px;
+    }
+
+    .form input[type=radio]{
+        width: 10px;
+    }
+    .form input[type=text]{
+        width: 50%;
+      padding: 5px 10px;
+      margin: 2px 0;
+      box-sizing: border-box;
+    }
+
+    .form textarea{
+        width: 60%;
+    }
+
+    .form input[type="submit"]{
+        width: 100px;
+    }
+
+    .form input[type="reset"]{
+        width: 100px;
+    }
+
+    /*mirasımız*/
+
+    .mirascol{
+        margin-left: 10px;
+        width: 96%;
+    }
+    .zilkale{
+        margin-left: 20px;
+    }
+    .mirascol h4{
+        font-size: 19px;
+    }
+    .mirascol p{
+        font-size: 17px;
+    }
+
+    /*sehrim*/
+
+    .slideshow-container{
+        width: 100%;
+        
+        max-height: 260px;
+        margin: 120px;
+        margin-left: 0px;
+        padding: 2px;
+    }
+   
+    .mySlides.fade{
+        max-height: 200px;
+        margin-top: 180px;
+        
+    }
+    .mySlides.fade img{
+        max-height: 200px;
+    }
+
+    .text{
+        font-size: 16px;
+        text-align: center;
+        width: 90%;
+        margin-bottom: 70px;
+        margin-left: 5px;
+    }
+    
+    #rizeBuyuk{
+        font-size: 22px;
+        margin-left: 2px;
+        text-decoration: none;
+        border: 1px solid black;
+    }
+    .row h4{
+        font-size: 20px;
+    }
+    .col{
+        margin-left: 18px;
+    }
+/*ozgecmis*/
+
+    .personalInfo{
+        margin-left: 26px;
+    }
+    .wrapper h1{
+        font-size: 28px;
+    }
+
+
 }
