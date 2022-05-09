@@ -4,78 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/menu.js" defer></script>
     <title>Ozgecmis</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     
 <div class="container">
-    <div class="navbar">
-
-        <div class="logo">
-            <a href="index.html">aasdasd</a>
-        </div>
+    <nav class="navbar">
+      <div class="brand-title">217Rize</div>
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+      <div class="navbar-links">
         <ul>
-            <li><a href="index.html">ANASAYFA</a></li>
-            <li><a href="hakkinda.html">Hakkında</a></li>
-            <li><a href="ozgecmis.html"class="activepage">Özgeçmiş</a></li>
-            <li><a href="sehrim.html">Şehrim</a></li>
-            <li><a href="mirasimiz.html">Mirasımız</a></li>
-            <li><a href="ilgialanlarim.html">İlgi Alanlarım</a></li>
-            <li><a href="iletisim.html">İletişim</a></li>
+          <li><a href="index.html">Anasayfa</a></li>
+          <li><a href="sehrim.html">Şehrim</a></li>
+          <li><a href="mirasimiz.html">Mirasımız</a></li>
+          <li><a href="hakkinda.html">Hakkında</a></li>
+          <li><a href="ilgialanlarim.html">İlgi Alanlarım</a></li>
+          <li><a href="ozgecmis.html" class="activepage">Özgeçmiş</a></li>
+          <li><a href="iletisim.html">İletişim</a></li>
+          <li><a href="login.html">Giriş Yap</a></li>
         </ul>
-    </div>
+      </div>
+    </nav>
     
-    <div class="personalInfo">
-      <div class="wrapper">
+    <div class="row1">
+      <div class="col3">
         <h1> Kişisel Bilgilerim</h1><br>
         <ul>
           <li>
-            <div class="bas">Ad: </div>
+            <header class="bas">Ad: </header>
             <p>Ahmet Özhan</p><br>
           </li>
           <li>
-            <div class="bas">Soyad: </div>
+            <header class="bas">Soyad: </header>
             <p>Özen</p><br>
           </li>
           <li>
-            <div class="bas">Doğum Yılı: </div>
+            <header class="bas">Doğum Yılı: </header>
             <p>2003</p><br>
           </li>
           <li>
-            <div class="bas">Doğum Yeri: </div>
+            <header class="bas">Doğum Yeri: </header>
             <p>Rize</p>
           </li>
         </ul>
       </div>
     </div>
     
-    <div class="education">
-        <div class="wrapper">
+    <div class="row1">
+        <div class="col3">
           <h1> Eğitim Hayatım</h1><br>
           <ul>
             <li>
-              <div class="bas">Anaokulu (2008 - 2009)</div>
+              <article class="bas">Anaokulu (2008 - 2009)</article>
               <p>9 Mart İlkokulu</p><br>
             </li>
             <li>
-              <div class="bas">İlkokul (2009 - 2013)</div>
+              <article class="bas">İlkokul (2009 - 2013)</article>
               <p>9 Mart İlkokulu</p><br>
             </li>
             <li>
-              <div class="bas">Ortaokul (2013 - 2016)</div>
+              <article class="bas">Ortaokul (2013 - 2016)</article>
               <p>Yamantürk Ortaokulu</p><br>
             </li>
             <li>
-              <div class="bas">8.Sınıf (2016 - 2017)</div>
+              <article class="bas">8.Sınıf (2016 - 2017)</article>
               <p>Rize Çözüm Koleji</p><br>
             </li>
             <li>
-              <div class="bas">Lise (2017 - 2021)</div>
+              <article class="bas">Lise (2017 - 2021)</article>
               <p>Rize TOBB Fen Lisesi</p><br>
             </li>
             <li>
-              <div class="bas">Üniversite (2021 - )</div>
+              <article class="bas">Üniversite (2021 - )</article>
               <p>Sakarya Üniversitesi-Bilgisayar Mühendisliği</p><br>
             </li>
           </ul>
@@ -84,18 +90,31 @@
 </div>
 
 <div class="footerContainer">
-    <footer class="footer">
-      <p class="yapimci">&copy; 2022, AOO </p>
-      <ul class="footerLinkler">
-            <li><a href="index.html">ANASAYFA</a></li>
-            <li><a href="hakkinda.html">Hakkında</a></li>
-            <li><a href="ozgecmis.html">Özgeçmiş</a></li>
-            <li><a href="sehrim.html">Şehrim</a></li>
-            <li><a href="mirasimiz.html">Mirasımız</a></li>
-            <li><a href="ilgialanlarim.html">İlgi Alanlarım</a></li>
-            <li><a href="iletisim.html">İletişim</a></li>
-      </ul>
-    </footer>
+  <p class="yapimci">&copy; 2022, AOO </p>
+  <div class="footcol">
+    <a href="index.html">ANASAYFA</a>
+  </div>
+  <div class="footcol">
+    <a href="hakkinda.html">Hakkında</a>
+  </div>
+  <div class="footcol">
+    <a href="ozgecmis.html">Özgeçmiş</a>
+  </div>
+  <div class="footcol">
+    <a href="sehrim.html">Şehrim</a>
+  </div>
+  <div class="footcol">
+    <a href="mirasimiz.html">Mirasımız</a>
+  </div>
+  <div class="footcol">
+    <a href="ilgialanlarim.html">İlgi Alanlarım</a>
+  </div>
+  <div class="footcol">
+    <a href="iletisim.html">İletişim</a>
+  </div>
+  <div class="footcol">
+    <a href="login.html">Giriş Yap</a>
+  </div>
 </div>
 
 </body>

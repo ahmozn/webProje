@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/menu.js" defer></script>
     <title>Iletisim</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     
-    <script>
-        function validateemail()  
-    {  
+<script>
+    function validateemail()  
+{  
     var x=document.form1.email.value;  
     var atposition=x.indexOf("@");  
     var dotposition=x.lastIndexOf(".");  
@@ -19,28 +20,31 @@
       alert("Lütfen geçerli bir email adresi giriniz." );  
       return false;  
       }  
-    } 
-    </script>   
+} 
+</script>   
 
 <div class="container">
-    <div class="navbar">
-
-        <div class="logo">
-            <a href="index.html">aasdasd</a>
-        </div>
-        <ul>
-            <li><a href="index.html">ANASAYFA</a></li>
-            <li><a href="hakkinda.html">Hakkında</a></li>
-            <li><a href="ozgecmis.html">Özgeçmiş</a></li>
+    <nav class="navbar">
+        <div class="brand-title">217Rize</div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="index.html">Anasayfa</a></li>
             <li><a href="sehrim.html">Şehrim</a></li>
             <li><a href="mirasimiz.html">Mirasımız</a></li>
+            <li><a href="hakkinda.html">Hakkında</a></li>
             <li><a href="ilgialanlarim.html">İlgi Alanlarım</a></li>
+            <li><a href="ozgecmis.html">Özgeçmiş</a></li>
             <li><a href="iletisim.html" class="activepage">İletişim</a></li>
-        </ul>
-    </div>
-    <div class="sikayet">
-        <h3>Şikayet veya Öneriler için bize ulaşın</h3><br><br>
-    </div>
+            <li><a href="login.html">Giriş Yap</a></li>
+          </ul>
+        </div>
+    </nav>
+    
     <form name="form1" action="iletisim.php" method="post" class="form" onsubmit="return validateemail();">
         <h4>Ad :</h4>
         <input type="text" name="ad" required autofocus><br><br>
@@ -49,7 +53,6 @@
         <h4>Cinsiyet :</h4>
         <input type="radio" name="cinsiyet" value="Erkek" required>Erkek<br>
         <input type="radio" name="cinsiyet" value="Kadın" required>Kadın<br><br>
-
         <h4>E-mail :</h4>
         <input type="text" name="email" required><br>
        
@@ -61,15 +64,16 @@
             <option value="BilgisayarMuhendisligi">Bilgisayar Mühendisliği</option>
         </select><br><br>
         
-        <h4>Adres :</h4>
+        <h4>Mesajınız :</h4>
         <textarea name="textarea" id="" cols="38" rows="10" placeholder="Buraya yazınız..."></textarea><br>
         
-        <label>
+        <label class="agreement">
             <input type="checkbox" name="onay" required>
             Bilgilerimin doğruluğunu onaylıyorum.<br>
         </label>
         <input type="reset"value="TEMİZLE">
         <input type="submit" value="GÖNDER">
+       
     </form>
 
 
@@ -80,22 +84,32 @@
 
 
 <div class="footerContainer">
-    <footer class="footer">
-      <p class="yapimci">&copy; 2022, AOO </p>
-      <ul class="footerLinkler">
-            <li><a href="index.html">ANASAYFA</a></li>
-            <li><a href="hakkinda.html">Hakkında</a></li>
-            <li><a href="ozgecmis.html">Özgeçmiş</a></li>
-            <li><a href="sehrim.html">Şehrim</a></li>
-            <li><a href="mirasimiz.html">Mirasımız</a></li>
-            <li><a href="ilgialanlarim.html">İlgi Alanlarım</a></li>
-            <li><a href="iletisim.html">İletişim</a></li>
-      </ul>
-    </footer>
+    <p class="yapimci">&copy; 2022, AOO </p>
+    <div class="footcol">
+        <a href="index.html">ANASAYFA</a>
+    </div>
+    <div class="footcol">
+        <a href="hakkinda.html">Hakkında</a>
+    </div>
+    <div class="footcol">
+        <a href="ozgecmis.html">Özgeçmiş</a>
+    </div>
+    <div class="footcol">
+        <a href="sehrim.html">Şehrim</a>
+    </div>
+    <div class="footcol">
+        <a href="mirasimiz.html">Mirasımız</a>
+    </div>
+    <div class="footcol">
+        <a href="ilgialanlarim.html">İlgi Alanlarım</a>
+    </div>
+    <div class="footcol">
+        <a href="iletisim.html">İletişim</a>
+    </div>
+    <div class="footcol">
+        <a href="login.html">Giriş Yap</a>
+      </div>
 </div>
-
-
-
 
 </body>
 </html>

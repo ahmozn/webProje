@@ -4,57 +4,94 @@
 }
 
 .container{
-    background:none;
+    background-image: url(cssBackground/index.jpg);
+    background-repeat: no-repeat;
     height:100vh;
     background-size: 100% 100%;
 }
-
-.container .navbar{
-    width: 100%;
-    height: 80px;
-    background: green
-}
-
-.navbar .logo a{
+.indexdiv{
+    margin-top: 20%;
     text-decoration: none;
-    font-size: 30px;
-    font-family: sans-serif;
+}
+.indexdiv h1{
+    margin-left: 160px;
+    font-size: 50px;
+}
+.indexdiv a{
+    margin-left: 210px;
+    font-size: 32px;
+    padding: 0px 7px;
+    color: aliceblue;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 8px;
 }
 
-.navbar .logo{
-    display: inline-block;
-    margin-left: 50px;
-    margin-top: 30px;
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
 }
 
-.navbar ul{
-    float:right;
-    margin-right: 20px;
-    
+.brand-title {
+    font-size: 1.5rem;
+    margin: 0.5rem;
 }
 
-.navbar ul li{
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
     list-style: none;
-    display:inline-block;
-    margin:0 8px;
-    line-height: 80px;
 }
 
-.navbar ul li a{
-    color:black;
+.navbar-links li a {
+    display: block;
     text-decoration: none;
-    font-size: 20px;
-    padding: 6px 13px;
-    transition: 1s;
+    color: white;
+    padding: 1rem;
 }
+
+.navbar-links li:hover {
+    background-color: #555;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
 
 .navbar ul li .activepage{
-    background: #ff6e00;
-    border-radius: 3px;
+    background:rgba(111, 224, 19, 0.61);
+    border-radius: 5px;
 }
 .navbar ul li a:hover{
-    background: #ff6e00;
-    border-radius: 2px;
+    background:rgba(111, 224, 19, 0.61);
+    border-radius: 5px;
 }
 
 .footerContainer{
@@ -72,7 +109,7 @@
 .footcol{
     float: left;
     margin-top: 2px;
-    margin-left: 4%;
+    margin-left: 40px;
     width: 10%;
 }
 
@@ -86,9 +123,25 @@
     padding: 0px 5px;
 }
 
+.row1{
+    width: 20%;
+    height: 94vh;
+    margin-left: 20%;
+    float:left;
+    background-color: rgb(255, 255, 255,0.8);
+}
+
+.col3{
+    margin-top: 25%;
+    margin-left: 70px;
+}
+
+.col3 ul,p{
+    margin-top: 10px;
+    font-size: 20px;
+}
 .personalInfo{
     margin-left: 5%;
-    display: inline-block;
     background: none;
     width: fit-content;
 }
@@ -117,8 +170,9 @@
 .slideshow-container {
   max-width: 1000px;
   margin-top: 2%;
-  margin-left: 12%;
+  margin-left: 22%;
   position: relative;
+  background:none;
 }
 
 .slideshow-container img{
@@ -130,7 +184,7 @@
 
 /* yazi */
 .text {
-  color: black;
+  color: white;
   font-size: 17px;
   padding: 8px 12px;
   position: absolute;
@@ -143,7 +197,7 @@
 /* gecis animasyonu */
 .fade {
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 1s;
 }
 
 @keyframes fade {
@@ -155,8 +209,8 @@
     float: left;
     border: 2px solid black;
     border-radius: 10px;
-    margin-top: 5px;
-    margin-left: 100px;
+    margin-top: 5%;
+    margin-left: 50px;
     max-height: 450px;
 }
 
@@ -173,39 +227,42 @@
     border: 2px solid black;
     border-radius: 10px;
     margin-top: 5px;
-    margin-left: 30px;
+    margin-left: 60px;
     max-height: 450px;
 }
 
 .miras h4{
     float: left;
-    margin-left: 5px;
+    margin-left: 220px;
     font-size: 47px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+#cayBardagiBaslik{
+    float: left;
+    margin-left: 100px;
+    font-size: 47px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 .miras p{
     float: left;
-    margin-left: 5px;
+    margin-left: 20px;
     font-size: 21px;
     max-width: 600px;
 }
 .mirascol{
     float: left;
-    margin-top: 20px;
+    height: 94vh;
     width: 35%;
-    margin-left: 200px;
+    margin-left: 180px;
+    background-color: rgb(255, 255, 255,0.8);
 }
 
-
-.mirascol h4{
-    float: left;
-
-}
 
 .col {
     float: left;
     margin-top: 20px;
+    margin-left: 5%;
     width: 17%;
 }
   
@@ -216,6 +273,9 @@
     clear: both;
 }
 
+.row{
+    background-color: rgb(255, 255, 255,0.8);
+}
 .col h4{
     text-decoration:underline;
     font-size: 22px;
@@ -226,6 +286,7 @@
     font-family: 'Times New Roman', Times, serif;
     font-size: 30px;
     margin-left: 25%;
+    color: rgb(9, 163, 60);
 }
 
 .col p{
@@ -245,20 +306,23 @@
 .bilgi h2{
     font-family:Georgia, 'Times New Roman', Times, serif ;
     font-size: 25px;
-    margin-left: 20%;
-    margin-top: 50px;
+    margin-left: 25%;
+    margin-top: 150px;
 }
 
 .bilgi img{
     float:left;
     margin-left: 70px;
+    margin-top: 5px;
+    max-width: 200px;
     border:2px solid black;
 }
 
 .bilgi p{
     margin-left: 20%;
-    max-width: 340px;
-    font-size: 18px;
+    margin-top: 20px;
+    max-width: 345px;
+    font-size: 20px;
 }
 
 .col1{
@@ -267,86 +331,121 @@
     margin-left: 8%;
     margin-top: 2%;
 }
+.col1 img{
+    border: none;
+    margin: auto;
+}
 
 .bilgi{
-    background-color:green;
+    background-color:rgb(255, 255, 255,0.8);
+}
+
+.api{
+    background-color: rgb(255, 55, 55,0.8);
+}
+
+.api h1{
+    font-size: 50px;
+    margin-left: 200px;
+    margin-top: 250px;
 }
 
 .form{
     margin-left: 40%;
     margin-top: 5px;
+    max-width: 400px;
+    height: 94vh;
+    background-image: url(cssBackground/desen.jpg);
+    border-radius: 4px;
 }
 
 .form h4{
     font-size: 20px;
+    margin-left: 10px;
 }
 
 .form input[type=text]{
-    width: 30%;
+    width: 80%;
   padding: 5px 20px;
-  margin: 8px 0;
+  margin: 8px 10px;
   box-sizing: border-box;
 }
 .form input[type=email]{
     width: 30%;
   padding: 5px 20px;
-  margin: 8px 0;
+  margin: 8px 10px;
   box-sizing: border-box;
 }
 .form input[type=password]{
     width: 30%;
   padding: 5px 20px;
-  margin: 8px 0;
+  margin: 8px 10px;
   box-sizing: border-box;
 }
 .form input[type=radio]{
-    width: 2%;
+    width: 7%;
     padding: 5px 20px;
-    margin: 8px 0;
+    margin: 8px 10px;
     box-sizing: border-box;
 }
 .form select{
-    width: 30%;
+    width: 60%;
     padding: 5px 20px;
-    margin: 8px 0;
+    margin: 8px 10px;
     box-sizing: border-box;
 }
 .form option{
     font-size: 18px;
 }
 .form input[type=reset]{
-    width: 10%;
+    width: 30%;
     padding: 5px 20px;
-    margin: 8px 0;
+    margin: 8px 10px;
     box-sizing: border-box;
 }
 .form input[type=submit]{
-    width: 10%;
+    width: 30%;
     padding: 5px 20px;
-    margin: 8px 0;
+    margin: 8px 10px;
     box-sizing: border-box;
 }
 
 .form textarea{
     padding: 5px 20px;
+    margin-left: 10px;
 }
 
 .form .onay{
     font-size: 10px;
+    margin-left: 10px;
 }
 
+.agreement{
+    margin-left: 10px;
+}
 .sikayet h3{
     margin-top: 5px;
     margin-left: 40%;
 }
 
+.login{
+    margin-top: 14%;
+    background-image: url(cssBackground/desen.jpg);
+    height:300px ;
+}
 .loginform{
     margin-left: 40%;
     margin-top: 5px;
 }
+.logRow:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 .loginform input[type="text"]{
     width: 260px;
+    height: 30px;
   padding: 5px 20px;
   margin: 8px 0;
   box-sizing: border-box;
@@ -354,6 +453,7 @@
 }
 .loginform input[type="password"]{
     width: 260px;
+    height: 30pxv;
   padding: 5px 20px;
   margin: 8px 0;
   box-sizing: border-box;
@@ -373,50 +473,99 @@
     box-sizing: border-box;
 }
 
+.loginform h4{
+    font-size: 22px;
+}
 .logcol{
     float: left;
-    margin-top: 20px;
-    width: 28%;
+    margin-top: 50px;
+    width: 25%;
 }
 
+.logcol p{
+    font-size: 14px;
+}
+#tamamlayici{
+    font-size: 20px;
+}
 
-
-@media screen and (max-width:768px){
+@media screen and (max-width:800px){
 .container{
     width: 100%;
+    background-image: url(cssBackground/desen.jpg);
+}
+.indexdiv h1{
+    margin-left: 65px;
+}
+
+.indexdiv a{
+    margin-left: 120px;
+    color: rgb(9, 163, 60);
+    padding: 0px 7px;
+    border: 1px solid rgb(9, 163, 60);
+    border-radius: 8px;
+
+}
+.indexdiv{
+    margin-left: 0px;
+    margin-top: 220px;
+    background-color: rgba(176, 217, 223, 0.671);
+    padding: 20px 0px;
 }
 
 /*navbar*/ 
    
+    .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    }
 
-    .navbar ul{
-        width: 100%;
+    .toggle-button {
+    display: flex;
+        }
+
+    .navbar-links {
+    display: none;
+    width: 100%;
     }
-    
-    .navbar ul li{
-        max-height: fit-content;
-        background: none;
-        size: 20px;
+
+    .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
     }
-    .navbar ul li a{
-        font-size: 12px;
-        margin-left: 2px;
-        
+
+    .navbar-links ul li {
+    text-align: center;
     }
+
+    .navbar-links ul li a {
+    padding: .4rem 1rem;
+        }
+
+    .navbar-links.active {
+    display: flex;
+    }
+
 /*footer*/
     .footerContainer{
         width: 100%;
     }
 
     .footcol{
-        width: 100%;
-        max-width: 23px;
-        font-size: 25px;
-        margin-left: 80px;
+        float: left;
+        width: 80%;
+        max-width: 119px;
+        font-size: 23px;
+        margin-left: 5px;
+        text-align: center;
     }
 
-    /*login*/
-
+/*login*/
+    .login{
+        margin-top: 220px;
+        background: none;
+        background-color: rgb(255, 255, 255,0.6);
+    }
     .logcol{
         width: 50%;
     }
@@ -429,13 +578,13 @@
          font-size: 15px;
      }
      .loginform input[type=text]{
-         width: 99%;
+         width: 100%;
        padding: 5px 10px;
        margin: 2px 0;
        box-sizing: border-box;
      }
      .loginform input[type="password"]{
-        width: 49%;
+        width: 50%;
         padding: 5px 10px;
         margin: 2px 0;
         box-sizing: border-box;
@@ -448,83 +597,106 @@
          width: 100px;
      }
 
-    /*iletisim*/
+/*iletisim*/
     .form{
        margin: auto;
        margin-left:10px ;
        width: 96%;
+       border-radius: 5px;
+       background: none;
+       background-color: rgb(255, 255, 255,0.6);
     }
     .form h4{
-        width:100%;
+        width:20%;
         font-size: 15px;
+        margin-left: 40px;
     }
 
     .form input[type=radio]{
         width: 10px;
+        margin-left: 40px;
     }
     .form input[type=text]{
         width: 50%;
       padding: 5px 10px;
       margin: 2px 0;
       box-sizing: border-box;
+      margin-left: 40px;
+      margin-top: 20px;
     }
 
     .form textarea{
         width: 60%;
+        margin-left: 40px;
     }
 
     .form input[type="submit"]{
         width: 100px;
+        margin-left: 40px;
     }
 
     .form input[type="reset"]{
         width: 100px;
+        margin-left: 40px;
     }
-
-    /*mirasımız*/
+    #bolumler{
+        margin-left: 40px;
+    }
+    .agreement{
+        margin-left: 40px;
+    }
+/*mirasımız*/
 
     .mirascol{
-        margin-left: 10px;
-        width: 96%;
+        margin-left: 0px;
+        margin-top: 20px;
+        text-align: left;
+        width: 100%;
+        height: 52%;
+        border-bottom: 2px solid rgb(85, 85, 85,0.8);
+        background-color: rgb(255, 255, 255,0.6);
     }
     .zilkale{
-        margin-left: 20px;
+        margin-left: 30px;
     }
     .mirascol h4{
-        font-size: 19px;
+        font-size: 20px;
+        margin-left: 40%;
     }
     .mirascol p{
         font-size: 17px;
+        margin-left: 10px;
+        max-width: 369px;
     }
-
-    /*sehrim*/
+    .bardak{
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+    #cayBardagiBaslik{
+        margin-left: 95px;
+        font-size: 20px;
+    }
+/*sehrim*/
 
     .slideshow-container{
-        width: 100%;
+        margin: auto;
         
-        max-height: 260px;
-        margin: 120px;
-        margin-left: 0px;
-        padding: 2px;
     }
    
     .mySlides.fade{
-        max-height: 200px;
-        margin-top: 180px;
-        
+       width: 100%;
+       padding: 2px 2px;
     }
     .mySlides.fade img{
-        max-height: 200px;
+        margin-top: 20px;
     }
 
     .text{
         font-size: 16px;
         text-align: center;
-        width: 90%;
-        margin-bottom: 70px;
-        margin-left: 5px;
+        width: 98%;
     }
-    
+
     #rizeBuyuk{
         font-size: 22px;
         margin-left: 2px;
@@ -537,14 +709,66 @@
     .col{
         margin-left: 18px;
     }
+    .row{
+        background: none;
+    }
 /*ozgecmis*/
 
     .personalInfo{
-        margin-left: 26px;
+        margin-left: 5px;
     }
     .wrapper h1{
         font-size: 28px;
     }
+    .row1{
+        width: 50%;
+        margin-left: 0px;
+        border-right: 2px solid rgb(85, 85, 85,0.8);
+        background-color: rgb(255, 255, 255,0.6);
+    }
+    .row1 h1{
+        margin: 12px;
+    }
+    .col3{
+        margin-left: 8px;
+    }
+    .col3 ul li{
+        list-style-type: none;
+    }
+/*hakkinda*/
+    .bilgi{
+        margin-top: 100px;
+        background-color: rgb(255, 255, 255,0.6);
+    }
+    .bilgi img{
+        float: none;
+        margin-left: 27%;
+    }
 
+    .bilgi h2{
+        margin:0px;
+        margin-left: 25%;
+        margin-top: 25px;
+        float: none;
+    }
+    .bilgi p{
+        margin: 30px 30px;
+    }
+    .col1{
+        width: 30%;
+        margin:0px;
+        margin-left: 10px;
+    }
+    .col1 img{
+        margin-left: 100px;
+    }
 
+/*ilgi alanlarim*/
+    .api{
+        width: 100%;
+    }
+    .api h1{
+        font-size: 20px;
+        margin-left:40px ;
+    }
 }

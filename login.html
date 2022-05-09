@@ -4,36 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/menu.js" defer></script>
     <title>Giriş</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     
 <div class="container">
-    <div class="navbar">
-
-        <div class="logo">
-            <a href="index.html">aasdasd</a>
-        </div>
-        <ul>
-            <li><a href="index.html">ANASAYFA</a></li>
-            <li><a href="hakkinda.html">Hakkında</a></li>
-            <li><a href="ozgecmis.html">Özgeçmiş</a></li>
+    <nav class="navbar">
+        <div class="brand-title">217Rize</div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="index.html">Anasayfa</a></li>
             <li><a href="sehrim.html">Şehrim</a></li>
             <li><a href="mirasimiz.html">Mirasımız</a></li>
+            <li><a href="hakkinda.html">Hakkında</a></li>
             <li><a href="ilgialanlarim.html">İlgi Alanlarım</a></li>
+            <li><a href="ozgecmis.html">Özgeçmiş</a></li>
             <li><a href="iletisim.html">İletişim</a></li>
             <li><a href="login.html" class="activepage">Giriş Yap</a></li>
-        </ul>
-    </div>
-
+          </ul>
+        </div>
+    </nav>   
     <div class="login">
         <form name="loginform" action="login.php" method="post" class="loginform" >
             
-            <div class="row">
+            <div class="logRow">
                 <div class="logcol">
-                    <h4>E-mail :</h4>
-                    <input type="text" name="email" required><br>
+                    <h4>*E-mail :</h4>
+                    <input type="text" name="email" required>
+                    <p>*email'inizin @ işareti ve sonrasını girmeyin</p>
                 </div>
                 <div class="logcol">
                     <br>
@@ -74,6 +79,9 @@
     <div class="footcol">
         <a href="iletisim.html">İletişim</a>
     </div>
+    <div class="footcol">
+        <a href="login.html">Giriş Yap</a>
+      </div>
 </div>
 
 
