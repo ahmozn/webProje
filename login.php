@@ -4,11 +4,12 @@ function infoControl(){
     $email = $_POST['email'];
     $sifre=$_POST['sifre'];
     if  ($email==$sifre){
-        echo "basarili giris";
+        echo "hosgeldiniz: "." ".$email;
 
     }
     else{
-        echo "olmadı";
+        header('Refresh: 4; URL=https://g211210073.000webhostapp.com/login.html');
+        echo "kullanici adi ve sifre uyusmuyor";
     }
 }
 infoControl();

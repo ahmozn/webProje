@@ -13,10 +13,8 @@
             echo "</br>";
             echo "Okuduğunuz Bölüm: ".''.$_POST['bolumler'];
             echo "</br>";
-            echo "Adres: ".''.$_POST['textarea'];
-
+            echo "Mesajınız: ".''.$_POST['textarea'];
         }
         
     }
-    echo "<p> <a href='iletisim.html'>&lt;GERİ DÖN&gt;</a></p> ";
 ?>
